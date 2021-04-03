@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOTP App</title>
+    <link rel="stylesheet" href="./main.css">
+    <script src="./jquery.min.js"></script>
+    <script src="./main.js"></script>
+</head>
+<body class="center">
+    <div class="neu_card">
+        <div id="login1">
+            <h3>Login</h3>
+            <form id="tfa1">
+                <input type="text" class="neu_input" id="uname" name="uname" placeholder="Username"><br>
+                <input type="password" class="neu_input" id="upass" name="upass" placeholder="Password"><br>
+                <input type="button" id="login" class="btn_neu" value="Login">
+                <input type="button" id="register" class="btn_neu" value="Register"><br>
+                <a class="mark">by Raghuram9758</a>
+            </form>
+    
+        </div>
+    
+        <div id="login2">
+            <h3>Enter TOTP</h3>
+            <form id="tfa2">
+                <input type="password" class="neu_input" id="token1" name="token1" placeholder="Password"><br>
+                <input type="button" id="submitTOTP1" class="btn_neu" value="Login"><br>
+                <a class="mark">by Raghuram9758</a> 
+            </form>
+    
+        </div>
+    
+        <div id="login3">
+            <h3>Scan QR to Register 2FA</h3>
+            <img id="QR"></img><br><br>
+            <input type="button" id="checkTOTP" class="btn_neu" value="Verify TOTP"><br>
+            <a class="mark">by Raghuram9758</a> 
+        </div>
+    
+        <div id="login4">
+            <h3>Check TOTP</h3>
+            <form id="tfa3">
+                <input type="password" class="neu_input" id="token2" name="token2" placeholder="Enter TOTP"><br>
+                <input type="button" id="submitTOTP2" class="btn_neu" value="Submit TOTP"><br>
+                <a class="mark">by Raghuram9758</a>
+            </form>
+    
+        </div>
+    
+        <div id="login5">
+            <h3>Login Successful</h3>
+        </div>
+        <div style="display: block;height: 30px;">
+            <h6 id="msg"></h6>
+        </div>
+    </div>
+    
+    
+</body>
+</html>
